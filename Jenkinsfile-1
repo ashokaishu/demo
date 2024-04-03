@@ -1,0 +1,19 @@
+pipeline{
+    agent any
+    stages {
+        stage('Build') {
+            steps {
+                bat 'echo Hello world'
+            }
+        }
+        stage('Deploy') {
+            when {
+                branch 'master'
+                environment name: 'DEPLOY_TO', values: 'production'
+            }
+            steps {
+                bat 'echo Deploying'
+            }
+        }
+    }
+}
