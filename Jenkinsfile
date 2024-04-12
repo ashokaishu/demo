@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Clone the Git repository
-                bat 'git clone https://github.com/your/repository.git'
+                bat 'git clone https://github.com/ashokaishu/demo.git'
             }
         }
         stage('Build ModuleA') {
