@@ -11,7 +11,7 @@ pipeline {
             steps {
                 // Navigate to ModuleA directory and build
                 dir('ModuleA') {
-                    bat 'gradle clean install'
+                    bat './build_moduleA.bat'
                 }
             }
         }
@@ -19,7 +19,7 @@ pipeline {
             steps {
                 // Navigate to ModuleB directory and build
                 dir('ModuleB') {
-                    bat 'gradle clean install'
+                    bat './build_moduleB.bat'
                 }
             }
         }
