@@ -10,10 +10,10 @@ pipeline {
         stage('Build ModuleA') {
             steps {
                 // Navigate to ModuleA directory and build
-                dir('ModuleA') {
+                //dir('ModuleA') {
                     bat 'javac ModuleACalculator.java'
                     bat 'java ModuleACalculator'
-                }
+               // }
             }
         }
         stage('Build ModuleB') {
