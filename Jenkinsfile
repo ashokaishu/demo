@@ -11,7 +11,7 @@ pipeline {
             steps {
                 // Navigate to ModuleA directory and build
                 dir('ModuleA') {
-                    bat 'build_moduleA.bat'
+                    bat 'java ModuleACalculator.java'
                 }
             }
         }
